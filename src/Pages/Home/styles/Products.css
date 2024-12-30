@@ -1,0 +1,156 @@
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px; /* Espaciado entre las tarjetas */
+    justify-content: center;
+  }
+  
+  .product {
+    width: 280px; /* Ancho de la tarjeta */
+    border: 1px solid #e0e0e0;
+    border-radius: 12px; /* Esquinas redondeadas */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Apilar elementos verticalmente */
+    background-color: white;
+    transition: transform 0.2s ease-in-out;
+    min-height: 400px; /* Altura mínima para mantener la consistencia */
+    justify-content: space-between; /* Asegura que los elementos estén espaciados */
+  }
+  
+  .product:hover {
+    transform: translateY(-10px); /* Efecto de hover */
+  }
+  
+  .discount-badge {
+    position: absolute;
+    top: 12px; /* Margen superior */
+    left: 12px;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    padding: 6px 10px; /* Espaciado interno */
+    border-radius: 6px; /* Bordes redondeados */
+    font-weight: bold;
+  }
+  
+  .product-image {
+    width: 100%;
+    display: flex; /* Habilita flexbox para el centrado */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin: 16px auto; /* Espaciado superior */
+    height: 200px; /* Fija una altura consistente para el área de la imagen */
+  }
+  
+  /* Imágenes específicas */
+  .product-image-parche-16 {
+    background-image: url('../../../Assets/Images/parche-20.png');
+    width: 140px; /* Tamaño visual para el parche 16" */
+    height: 140px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .product-image-parche-20 {
+    background-image: url('../../../Assets/Images/parche-20.png');
+    width: 160px; /* Tamaño visual para el parche 20" */
+    height: 160px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .product-image-parche-24 {
+    background-image: url('../../../Assets/Images/parche-20.png');
+    width: 180px; /* Tamaño visual para el parche 24" */
+    height: 180px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .product-image-parche-26 {
+    background-image: url('../../../Assets/Images/parche-20.png');
+    width: 200px; /* Tamaño visual para el parche 26" */
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .product-info {
+    padding: 16px;
+    text-align: center;
+    flex-grow: 1; /* Asegura que el espacio se expanda de forma uniforme */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Posiciona los elementos en la parte inferior */
+  }
+  
+  .brand {
+    font-size: 14px; /* Fuente más grande */
+    color: gray;
+    font-weight: bold;
+    margin-bottom: 8px; /* Espaciado entre elementos */
+  }
+  
+  .name {
+    font-size: 16px; /* Fuente más grande */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 12px; /* Espaciado entre elementos */
+  }
+  
+  .prices {
+    font-size: 16px; /* Fuente más grande */
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 12px; /* Espaciado entre los precios */
+    margin-bottom: 16px; /* Espaciado inferior para separar del botón */
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .discount-price {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .add-to-cart {
+    background-color: #e97e3c;
+    color: white;
+    border: none;
+    padding: 12px 16px; /* Botón más grande */
+    border-radius: 6px; /* Bordes redondeados */
+    cursor: pointer;
+    font-size: 16px; /* Fuente más grande */
+    margin: 0 auto; /* Centra el botón */
+    max-width: 200px; /* Ancho máximo uniforme */
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  .product-sectionone {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 32px; /* Título mucho más grande */
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: #333;
+  }
+  

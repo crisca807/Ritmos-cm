@@ -1,0 +1,18 @@
+.unique-banner-container {
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .unique-logo {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 500px; /* Altura fija del banner, ajusta según lo necesario */
+    background-image: url('../../../Assets/Images/promocion\ \(1\)-fotor-20241230131140.png'); /* Ruta de la imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+  }
+  
