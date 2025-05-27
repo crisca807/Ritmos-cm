@@ -1,18 +1,44 @@
 .unique-banner-container {
-    width: 100%; /* Ocupa todo el ancho de la pantalla */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .unique-logo {
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    height: 500px; /* Altura fija del banner, ajusta según lo necesario */
-    background-image: url('../../../Assets/Images/promocion\ \(1\)-fotor-20241230131140.png'); /* Ruta de la imagen */
-    background-size: cover; /* Asegura que la imagen cubra todo el área */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-  }
-  
+  position: relative; /* para contener el texto absoluto */
+  width: 100%;
+  max-width: 1500px; /* límite máximo ancho */
+  margin: 0 auto; /* centra el contenedor */
+  padding: 20px; /* margen blanco alrededor */
+  background-color: white; /* fondo blanco para el margen */
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0); /* sombra para todo el contenedor */
+  overflow: hidden; /* para evitar que el texto o imagen sobresalga */
+}
+
+.unique-banner-container img {
+  width: 100%;
+  height: 500px; /* altura fija */
+  object-fit: cover; /* muestra todo el gif */
+  border-radius: 15px; /* bordes redondeados */
+  display: block;
+}
+
+/* Estilos para el texto superpuesto */
+.unique-banner-container .banner-text {
+  position: absolute;
+  top: 50%; /* centrado vertical */
+  left: 50%; /* centrado horizontal */
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  font-family: Arial, sans-serif;
+  pointer-events: none; /* para que no bloquee clicks */
+}
+
+.unique-banner-container .banner-text h1 {
+  font-size: 3rem;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.unique-banner-container .banner-text p {
+  font-size: 1.5rem;
+  margin: 0;
+}
