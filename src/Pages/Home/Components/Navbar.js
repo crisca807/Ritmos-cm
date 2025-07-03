@@ -17,12 +17,12 @@ const Navbar = () => {
         </div>
       </div>
       <ul className="navbar-links">
-        <li><a href="/">Inicio</a></li>
+    
         <li><a href="/percusion">Percusión</a></li>
         <li><a href="/cuerda">Cuerda</a></li>
         <li><a href="/viento">Viento</a></li>
         <li><a href="/accesorios">Accesorios</a></li>
-        <li><a href="/login" className="login-link">Iniciar Sesión</a></li>
+        <li><a href="/login" className="login-link">Iniciar </a></li>
         {/* Ícono de carrillo */}
         <li className="cart-icon">
           <a href="/cart">
